@@ -133,7 +133,7 @@ ul li:hover .title{
 .container{
     display: grid;
     /* height: 100vh; */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
     grid-template-areas: "gambar content";
     /* gap: 20px; */
@@ -160,7 +160,7 @@ ul li:hover .title{
 #content{
     /* background: linear-gradient(45deg, rgb(66, 114, 84), rgb(53, 143, 143)); */
     text-align: center;
-    padding:15%;
+    padding:10%;
     grid-area: content;
 }
 
