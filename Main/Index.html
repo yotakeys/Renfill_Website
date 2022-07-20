@@ -5,7 +5,10 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-
+      <link rel="stylesheet" href="components/Nav+Home - Green/style.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      </style> 
       <script src="https://cdn.tailwindcss.com"></script>
       <meta charset="utf-8" />
       <meta name="viewport"
@@ -14,73 +17,69 @@
       <title>Renfill</title>
 	</head>
 
-	<body class="bg-white p-0">
+	<body class="bg-white">
         <!-- Navbar goes here -->
-        <nav class="bg-white shadow-lg">
-          <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-              <div class="flex space-x-7">
-                <div>
-                  <!-- Website Logo -->
-                  <a href="#" class="flex items-center py-4 px-2">
-                    <!-- <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2"> -->
-                    <span class="font-semibold text-gray-500 text-lg">Renfill</span>
-                  </a>
-                </div>
-                <!-- Primary Navbar items -->
-                <div class="hidden md:flex items-center space-x-1">
-                  <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">Home</a>
-                  <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">Services</a>
-                  <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">Blogs</a>
-                  <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">About</a>
-                  <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">Contact Us</a>
-                </div>
-              </div>
-              <!-- Secondary Navbar items -->
-              <div class="hidden md:flex items-center space-x-3 ">
-                <a href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Download</a>
-              </div>
-              <!-- Mobile menu button -->
-              <div class="md:hidden flex items-center">
-                <button class="outline-none mobile-menu-button">
-                <svg class=" w-6 h-6 text-gray-500 hover:text-green-600 "
-                  x-show="!showMenu"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
+        <header id="header">
+          <a href="#" class="logo">LOGO</a>
+          <div class="toggle"></div>
+          <ul class="navigate">
+              <li style="--i:#000;--j:#999;">
+                  <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="title">Home</span>
+              </li>
+              <li style="--i:#000;--j:#999;">
+                  <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                  <span class="title">Blogs</span>
+              </li>
+              <li style="--i:#000;--j:#999;">
+                  <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                  <span class="title">Our Team</span>
+              </li>
+              <li style="--i:#000;--j:#999;">
+                  <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                  <span class="title">About us</span>
+              </li>
+              <li style="--i:#000;--j:#999;">
+                  <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                  <span class="title">Contact us</span>
+              </li>
+          </ul>
+      </header>
+  
+      <div class="container">
+          <div class="sama" id="gambar">
+              <img src="asset/RimuruK.png" alt="">
+          </div>
+          <div class="sama text-green-600" id="content">
+              <div class="text-5xl text-green-500">RENFILL</div>
+              <br>
+              <div class="text-3xl">Mari Kita Selamatkan Bumi dari Sampah Plastik</div>
+              <br>
+              <div class="text-1xl">Daur Ulang Saja Tidak Cukup untuk Menyelasaikan Masalah Plastik, Kita perlu untuk mengurangi penggunaan plastik. Salah satu caranya adalah menggunakan Botol refill untuk keperluan sehari-hari, dibandingkan menggunakan plastik sekali pakai</div>
+              <br>
+              <button class="mb-8 w-64 h-20  bg-green-500 hover:bg-white border-2 text-gray-800 font-bold py-2 px-4 rounded-xl inline-flex items-center">
+                <svg class="mx-auto fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                <span class="mx-auto text-xl">Download</span>
               </button>
-              </div>
-            </div>
+              <div class="text-3xl text-black">#DaurUlangSajaTidakCukup</div>
           </div>
-          <!-- mobile menu -->
-          <div class="hidden mobile-menu">
-            <ul class="">
-              <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 hover:text-white">Home</a></li>
-              <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 hover:text-white">Services</a></li>
-              <li><a href="#blogs" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 hover:text-white">Blogs</a></li>
-              <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 hover:text-white">About</a></li>
-              <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 hover:text-white">Contact Us</a></li>
-            </ul>
-          </div>
-          <script>
-            const btn = document.querySelector("button.mobile-menu-button");
-            const menu = document.querySelector(".mobile-menu");
+      </div>
 
-            btn.addEventListener("click", () => {
-              menu.classList.toggle("hidden");
-            });
-          </script>
-        </nav>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script>
+                  const toggleMenu = document.querySelector('.toggle');
+              const navigation = document.querySelector('.navigate');
+  
+      toggleMenu.onclick = function(){
+          toggleMenu.classList.toggle('active');
+          navigation.classList.toggle('active');
+  }
+      </script>
 
 <!-- card download -->
         <div class="p-20 bg-green-500">
-          <a href="#" class="flex flex-col mx-auto items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl text-green-500 hover:bg-white hover:text-black">
+          <a href="#" class="flex flex-col mx-auto items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl text-black hover:bg-white hover:text-green-500">
               <img class="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="../main/asset/rimuru.jpg" alt="">
               <div class="flex flex-col justify-between p-4 leading-normal ">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight ">RENFILL</h5>
@@ -102,7 +101,7 @@
         <footer class="text-center bg-green-600 text-white pt-3 p-">
           <div class="mt-3" style="font-family: 'Ubuntu', sans-serif;">Media Sosial Kami</div>  
           <div class="px-3 pt-3">
-            <div class="flex justify-center mb-6">
+            <div class="flex justify-center mb-6 bg-green-600">
                   <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                     <svg aria-hidden="true"
                     focusable="false"
@@ -206,7 +205,7 @@
           © Copyright Renfill ~ 2022
         </div>
       </footer>
+
     </body>
-    
     </html>
     
