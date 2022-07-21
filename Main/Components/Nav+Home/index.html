@@ -6,52 +6,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style> 
-    <title>NavBar Hover</title>
+    <link rel="stylesheet" href="style.css">
+    <title>NavBar Tailwind</title>
 </head>
-<body>
-    <header id="header">
-        <a href="#" class="logo">LOGO</a>
+<body class="m-0 p-0 box-border" style="font-family: 'Montserrat', sans-serif;">
+    <header id="header" class="flex justify-between items-center bg-green-500 px-[25px] min-h-[15vh] shadow-md">
+        <!-- LOGO -->
+        <a href="#!" class="text-white font-bold text-[2em] duration-500 no-underline">LOGO</a>
+        
+        <!-- TOGGLE -->
         <div class="toggle"></div>
-        <ul class="navigate">
-            <li style="--i:#000;--j:#999;">
-                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                <span class="title">Home</span>
+        <!-- <div class="toggle md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+                <svg class=" w-10 h-10 text-white hover:text-green-600 "
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div> -->
+        
+        <!-- NAVBAR --->
+        <ul class="navigate hidden md:flex relative flex gap-[25px]">
+            <!-- Home -->
+            <li class="group relative no-underline w-[60px] h-[60px] bg-white rounded-[60px] cursor-pointer flex justify-center 
+                    items-center duration-500 hover:w-[160px] shadow-[0_10px_25px_rgba(0,0,0,0.1)] 
+                    hover:bg-gradient-to-r from-green-600 to-green-700"
+                style="--i:#000;--j:#999;">
+                <span class="absolute">
+                    <ion-icon name="home-outline" 
+                            class="text-green-500 text-[1.75em] duration-500 delay-[0.25s] 
+                                group-hover:scale-0 group-hover:delay[0s]">
+                    </ion-icon>
+                </span>
+                <span class="text-[#fff] text-[1.1em] uppercase tracking-[0.1em] scale-0 duration-500 delay-0
+                            group-hover:delay-[0.25s] group-hover:font-bold group-hover:scale-100">
+                Home</span>
             </li>
-            <li style="--i:#000;--j:#999;">
-                <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
-                <span class="title">Blogs</span>
+            <!-- Blog -->
+            <li class="group relative no-underline w-[60px] h-[60px] bg-white rounded-[60px] cursor-pointer flex justify-center 
+                    items-center duration-500 hover:w-[160px] shadow-[0_10px_25px_rgba(0,0,0,0.1)] 
+                    hover:bg-gradient-to-r from-green-600 to-green-700"
+                style="--i:#000;--j:#999;">
+                <span class="absolute">
+                    <ion-icon name="newspaper-outline"
+                            class="text-green-500 text-[1.75em] duration-500 delay-[0.25s] 
+                                group-hover:scale-0 group-hover:delay[0s]">
+                    </ion-icon>
+                </span>
+                <span class="text-[#fff] text-[1.1em] uppercase tracking-[0.1em] scale-0 duration-500 delay-0
+                    group-hover:delay-[0.25s] group-hover:font-bold group-hover:scale-100">
+                Blogs</span>
             </li>
-            <li style="--i:#000;--j:#999;">
-                <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-                <span class="title">Our Team</span>
+            <!-- Team -->
+            <li class="group relative no-underline w-[60px] h-[60px] bg-white rounded-[60px] cursor-pointer flex justify-center 
+                    items-center duration-500 hover:w-[160px] shadow-[0_10px_25px_rgba(0,0,0,0.1)] 
+                    hover:bg-gradient-to-r from-green-600 to-green-700"
+                style="--i:#000;--j:#999;">
+                <span class="absolute">
+                    <ion-icon name="people-outline"
+                            class="text-green-500 text-[1.75em] duration-500 delay-[0.25s] 
+                                group-hover:scale-0 group-hover:delay[0s]">
+                    </ion-icon>
+                </span>
+                <span class="text-[#fff] text-[1.1em] uppercase tracking-[0.1em] scale-0 duration-500 delay-0
+                            group-hover:delay-[0.25s] group-hover:font-bold group-hover:scale-100">
+                Our Team</span>
             </li>
-            <li style="--i:#000;--j:#999;">
-                <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
-                <span class="title">About us</span>
+            <!-- About -->
+            <li class="group relative no-underline w-[60px] h-[60px] bg-white rounded-[60px] cursor-pointer flex justify-center 
+                    items-center duration-500 hover:w-[160px] shadow-[0_10px_25px_rgba(0,0,0,0.1)] 
+                    hover:bg-gradient-to-r from-green-600 to-green-700"
+                style="--i:#000;--j:#999;">
+                <span class="absolute">
+                    <ion-icon name="information-circle-outline" 
+                            class="text-green-500 text-[1.75em] duration-500 delay-[0.25s] 
+                                group-hover:scale-0 group-hover:delay[0s]">
+                    </ion-icon>
+                </span>
+                <span class="text-[#fff] text-[1.1em] uppercase tracking-[0.1em] scale-0 duration-500 delay-0
+                            group-hover:delay-[0.25s] group-hover:font-bold group-hover:scale-100">
+                About us</span>
             </li>
-            <li style="--i:#000;--j:#999;">
-                <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-                <span class="title">Contact us</span>
+            <!-- Contact -->
+            <li class="group relative no-underline w-[60px] h-[60px] bg-white rounded-[60px] cursor-pointer flex justify-center 
+                    items-center duration-500 hover:w-[160px] shadow-[0_10px_25px_rgba(0,0,0,0.1)] 
+                    hover:bg-gradient-to-r from-green-600 to-green-700"
+                style="--i:#000;--j:#999;">
+                <span class="absolute">
+                    <ion-icon name="call-outline" 
+                            class="text-green-500 text-[1.75em] duration-500 delay-[0.25s] 
+                                group-hover:scale-0 group-hover:delay[0s]">
+                    </ion-icon></span>
+                <span class="text-[#fff] text-[1.1em] uppercase tracking-[0.1em] scale-0 duration-500 delay-0
+                            group-hover:delay-[0.25s] group-hover:font-bold group-hover:scale-100">
+                Contact us</span>
             </li>
         </ul>
     </header>
 
-    <div class="container">
-        <div class="sama" id="gambar">
-            <img src="image/siklus.png" alt="">
+    <!-- CONTAINER -->
+    <div class="grid h-[100vh] grid-cols-2 grid-rows-1">
+        <!-- kolom buat gambar -->
+        <div id="gambar" class="col-span-1 bg-green-400 overflow-hidden">
+            <img src="image/siklus.png" alt="tes" class="items-center">
         </div>
-        <div class="sama" id="content">
-            <h2>NT NGAB!</h2>
+        <!-- kolom buat konten / kata2 -->
+        <div id="content" class="col-span-1 text-center p-[10%]">
+            <div class="text-5xl text-green-500">RENFILL</div> <br>
+            <div class="text-3xl">Mari Kita Selamatkan Bumi dari Sampah Plastik</div> <br>
+            <div class="text-1xl">Daur Ulang Saja Tidak Cukup untuk Menyelasaikan Masalah Plastik, 
+                Kita perlu untuk mengurangi penggunaan plastik. Salah satu caranya adalah menggunakan 
+                Botol refill untuk keperluan sehari-hari, dibandingkan menggunakan plastik sekali pakai
+            </div>
+            <br>
+            <button class="group mb-8 w-64 h-20 bg-green-500 hover:bg-green-600 border-2 py-2 px-4 rounded-xl inline-flex items-center">
+                <svg class="mx-auto fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
+                </svg>
+                <span class="font-bold text-white mx-auto text-xl">Download</span>
+            </button>
+            <div class="text-3xl text-black">#BersamaRenfill</div>
+            <div class="text-3xl text-black">#PulihkanBumi</div>
         </div>
     </div>
 
-    <footer></footer>
+    <!-- JS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="script.js"></script>
+    <script>
+        const toggleMenu = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigate');
+
+        toggleMenu.onclick = function(){
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

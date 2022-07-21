@@ -1,174 +1,3 @@
-/* all */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* header */
-#header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(34 197 94);
-    padding-right: 20px;
-    padding-left: 20px;
-    min-height: 15vh;
-}
-
-/* #header{
-    position: relative;
-    top: 0; left: 0; width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
-    background-color: rgb(34 197 94);
-} */
-
-.logo{
-    transition: 0.5s;
-    color: white;
-    font-weight: 700;
-    font-size: 2em;
-    text-decoration: none;
-    justify-content: start;
-}
-
-.navigate{
-    position: relative;
-    display: flex;
-    gap: 25px;
-}
-
-.navigate li{
-    position: relative;
-    list-style: none;
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    border-radius: 60px;
-    cursor: pointer;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    transition: 0.5s;
-}
-
-.navigate li:hover{
-    width: 150px;
-    /* background: linear-gradient(#81FBB8, #28C76F); */
-    background: linear-gradient(45deg, rgb(66, 114, 84), rgb(53, 143, 143));
-    box-shadow: 0 10px 25px rgba(0,0,0,0);
-}
-
-/* .navigate li::before{
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 60px;
-    background: linear-gradient(45deg, var(--i), var(--j));
-    opacity:0;
-    transition: 0.5s;
-}
-
-.navigate li:hover::before{
-    opacity: 1;
-}
-
-.navigate li::after{
-    content: '';
-    position: absolute;
-    width: 100%; height: 100%;
-    top: 10px;
-    border-radius: 60px;
-    background: linear-gradient(45deg, var(--i), var(--j));
-    transition: 0.5s;
-    filter: blur(15px);
-    z-index: -1;
-    opacity: 0;
-}
-
-.navigate li:hover::after{
-    opacity: 0.5;
-} */
-
-ul li ion-icon{
-    color: rgb(34 197 94);
-    font-size: 1.75em;
-    transition: 0.5s;
-    transition-delay: 0.25s;
-}
-
-ul li:hover ion-icon{
-    transform: scale(0);
-    transition-delay: 0s;
-}
-
-ul li span{
-    position: absolute;
-}
-
-ul li .title{
-    color: #fff;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transform: scale(0);
-    transition: 0.5s;
-    transition-delay: 0s;
-}
-
-ul li:hover .title{
-    transform: scale(1);
-    font-weight: 600;
-    /* transition: 0.5s; */
-    transition-delay: 0.25s;
-}
-
-/* card */
-.container{
-    display: grid;
-    /* height: 100vh; */
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "gambar content";
-    /* gap: 20px; */
-    background-color: white;
-}
-
-/* .sama{
-    border-radius: 20px;
-} */
-
-#gambar{
-    /* background: linear-gradient(90deg, rgb(66, 114, 84), rgb(53, 143, 143)); */
-    grid-area: gambar;
-    /* opacity: 0.3; */
-    overflow: hidden;
-    align-items: center;
-}
-
-/* #gambar img{
-    height: 100vh;
-    width: 100v;
-} */
-
-#content{
-    /* background: linear-gradient(45deg, rgb(66, 114, 84), rgb(53, 143, 143)); */
-    text-align: center;
-    padding:10%;
-    grid-area: content;
-}
-
-/* footer{
-    height: 10vh;
-    background: rgb(34 197 94);
-} */
-
 @media (max-width: 650px){
     .logo{
         font-size: 1.5em;
@@ -202,8 +31,8 @@ ul li:hover .title{
     }
     .toggle.active{
         position: fixed;
-        top: 47px;
-        right: 20px;
+        top: 32px;
+        right: 25px;
         background: url(image/close.png);
         background-size: 25px;
         background-position: center;
@@ -212,7 +41,7 @@ ul li:hover .title{
 
     .container{
         display: grid;
-        height: 100%;
+        height: 150vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "gambar" "content";
