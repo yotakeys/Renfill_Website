@@ -1,25 +1,28 @@
-body{
+*{
     font-family: 'Montserrat', sans-serif;
+}
+
+.container{
     display: grid;
     height: 100vh;
     padding: 10vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1.2fr;
     grid-template-areas:
-        "pesan pesan pesan"
+        "txt txt txt"
         "content1 content2 content3";
     gap: 15px;
     text-align: center;
 }
 
-.tes{
+.card{
     border-radius: 17px;
     background-color: #fff;
     box-shadow: 0 15px 20px 11px rgba(0, 0, 0, 0.1);
 }
 
-.pesan{
-    grid-area: pesan;
+.txt{
+    grid-area: txt;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -34,7 +37,7 @@ body{
 }
 
 @media (max-width: 640px){
-    body{
+    .container{
         height: 200vh;
         grid-template-columns: 1fr;
         grid-template-rows:
@@ -43,7 +46,7 @@ body{
             1.2fr
             1.2fr;
         grid-template-areas:
-            "pesan"
+            "txt"
             "content1"
             "content2"
             "content3";

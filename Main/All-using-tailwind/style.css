@@ -17,7 +17,7 @@
         width: 30px;
         height: 30px;
         cursor: pointer;
-        background: url(image/menu.png);
+        background: url(../Asset/menu.png);
         background-size: 30px;
         background-position: center;
         background-repeat: no-repeat;
@@ -27,7 +27,7 @@
         position: fixed;
         top: 32px;
         right: 25px;
-        background: url(image/close.png);
+        background: url(../Asset/close.png);
         background-size: 25px;
         background-position: center;
         background-repeat: no-repeat;

@@ -6,23 +6,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    </style> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>NavBar Tailwind</title>
 </head>
 <body class="m-0 p-0 box-border" style="font-family: 'Montserrat', sans-serif;">
     <header id="header" class="flex justify-between items-center bg-green-500 px-[25px] min-h-[15vh] shadow-md">
         <!-- LOGO -->
-        <a href="#!" class="text-white font-bold text-[2em] duration-500 no-underline">LOGO</a>
+        <a href="#!" class="text-white font-bold text-[1.5em] sm:text-[2em] duration-500 no-underline">LOGO</a>
         
         <!-- TOGGLE -->
+        <!-- <div class="toggle flex sm:hidden items-center relative w-[30px] h-[30px] cursor-pointer 
+                    bg-[length:30px_30px] bg-center bg-no-repeat z-[10000]"
+            style="background-image: url(image/menu.png);">
+        </div> -->
         <div class="toggle"></div>
-        <!-- <div class="toggle md:hidden flex items-center">
+        <!-- <div class="toggle sm:hidden flex items-center active:bg-blue-600">
             <button class="outline-none mobile-menu-button">
-                <svg class=" w-10 h-10 text-white hover:text-green-600 "
+                <svg class="w-10 h-10 text-white hover:text-green-600"
                     x-show="!showMenu"
                     fill="none"
                     stroke-linecap="round"
@@ -37,7 +44,7 @@
         </div> -->
         
         <!-- NAVBAR --->
-        <ul class="navigate hidden md:flex relative flex gap-[25px]">
+        <ul class="navigate hidden sm:flex relative flex gap-[25px]">
             <!-- Home -->
             <li class="group relative no-underline w-[60px] h-[60px] bg-white rounded-[60px] cursor-pointer flex justify-center 
                     items-center duration-500 hover:w-[160px] shadow-[0_10px_25px_rgba(0,0,0,0.1)] 
@@ -116,13 +123,15 @@
     </header>
 
     <!-- CONTAINER -->
-    <div class="grid h-[100vh] grid-cols-2 grid-rows-1">
-        <!-- kolom buat gambar -->
-        <div id="gambar" class="col-span-1 bg-green-400 overflow-hidden">
-            <img src="image/siklus.png" alt="tes" class="items-center">
+    <div class="grid h-[200vh] grid-cols-1 grid-rows-2 sm:h-[100vh] sm:grid-cols-2 sm:grid-rows-1">
+        <!-- KOLOM GAMBAR -->
+        <div id="gambar" class="bg-center bg-cover col-span-1 items-center overflow-hidden"
+            style="background-image: url(image/siklus.png)">
+            <!-- <img src="image/siklus.png" alt="tes" class="items-center"> -->
         </div>
-        <!-- kolom buat konten / kata2 -->
-        <div id="content" class="col-span-1 text-center p-[10%]">
+        
+        <!-- KOLOM KONTEN -->
+        <div id="content" class="col-span-1 text-center p-[10%] overflow-auto">
             <div class="text-5xl text-green-500">RENFILL</div> <br>
             <div class="text-3xl">Mari Kita Selamatkan Bumi dari Sampah Plastik</div> <br>
             <div class="text-1xl">Daur Ulang Saja Tidak Cukup untuk Menyelasaikan Masalah Plastik, 
