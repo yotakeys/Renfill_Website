@@ -17,6 +17,7 @@
     <title>Renfill</title>
 </head>
 <body class="m-0 p-0 box-border" style="font-family: 'Montserrat', sans-serif;">
+    <!-- HEADER -->
     <header id="header" class="flex justify-between items-center bg-green-500 px-[25px] min-h-[15vh] shadow-md">
         <!-- LOGO -->
         <a href="#!" class="text-white font-bold text-[1.5em] sm:text-[2em] duration-500 no-underline">LOGO</a>
@@ -122,16 +123,13 @@
         </ul>
     </header>
 
-    <!-- CONTAINER -->
-    <div class="grid h-[200vh] grid-cols-1 grid-rows-2 sm:h-[100vh] sm:grid-cols-2 sm:grid-rows-1">
+    <!-- HOME -->
+    <div class="grid h-[200vh] grid-cols-1 grid-rows-2 sm:h-[100vh] sm:grid-cols-2 sm:grid-rows-1
+                rounded-[20px] m-[30px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]">
         <!-- KOLOM GAMBAR -->
-        <div id="gambar" class="bg-center bg-cover col-span-1 items-center overflow-hidden"
-            style="background-image: url(Asset/RimuruK.png)">
-            <!-- <img src="image/siklus.png" alt="tes" class="items-center"> -->
-        </div>
-        
+        <div class="bg-center bg-cover col-span-1 items-center overflow-hidden bg-[url('Asset/RimuruK.png')]"></div> 
         <!-- KOLOM KONTEN -->
-        <div id="content" class="col-span-1 text-center p-[10%] overflow-auto">
+        <div class="col-span-1 text-center p-[10%] overflow-auto">
             <div class="text-5xl text-green-500">RENFILL</div> <br>
             <div class="text-3xl">Mari Kita Selamatkan Bumi dari Sampah Plastik</div> <br>
             <div class="text-1xl">Daur Ulang Saja Tidak Cukup untuk Menyelasaikan Masalah Plastik, 
@@ -139,7 +137,7 @@
                 Botol refill untuk keperluan sehari-hari, dibandingkan menggunakan plastik sekali pakai
             </div>
             <br>
-            <button class="group mb-8 w-64 h-20 bg-green-500 hover:bg-green-600 border-2 py-2 px-4 rounded-xl inline-flex items-center">
+            <button class="group mb-8 w-60 h-20 bg-green-500 hover:bg-green-600 border-2 py-2 px-4 rounded-xl inline-flex items-center">
                 <svg class="mx-auto fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
                 </svg>
@@ -150,16 +148,47 @@
         </div>
     </div>
 
-
+    <!-- CARD_PESAN -->
+    <div class="cardpes grid h-[200vh] sm:h-[100vh] p-[8vh] rounded-[20px] m-[30px] gap-[15px] text-center
+            shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]">
+        <div class="pesan">Cara Pemesanan</div>
+        <div class="card overflow-auto rounded-[17px] bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]"
+            id="content1">
+            <img class="w-40 h-40 mx-auto mb-6" src="Asset/Slime1.jpg">
+            <h1 class="text-xl font-bold">Pesan</h1>
+            <p>Login ke aplikasi Renfill, Pilih Produk produk yang ingin 
+                dipesan dan diisi ulang beserta rincianya. Lalu lakukan 
+                pemesanan dengan menentukan hari dan alamat pengantara.
+            </p>
+        </div>
+        <div class="card overflow-auto rounded-[17px] bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]" 
+            id="content2">
+            <img class="w-40 h-40 mx-auto mb-6" src="Asset/Slime2.jpg">
+            <h1 class="text-xl font-bold">Refill</h1>
+            <p>Driver kami akan datang ke rumah anda, 
+                Siapkan botol untuk isi ulang dan lakukan isi ulang, 
+                Lalu tuntaskan pembayaran dan Transaksi pun selesai.
+            </p>
+        </div>
+        <div class="card overflow-auto rounded-[17px] bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]"
+            id="content3">
+            <img class="w-40 h-40 mx-auto mb-6" src="Asset/Slime3.jpg">
+            <h1 class="text-xl font-bold">Ulangi</h1>
+            <p>Lakukan hal tersebut secara berulang ulang, pesan, 
+                lalu lakukan refill, sehingga penggunaan plastik 
+                sekali pakai dapat ditekan, dan mengurangi jumlah sampah plastik
+            </p>
+        </div>
+    </div>
     
     <!-- CARD_DOWNLOAD -->
     <div class="p-10 bg-green-500">
         <a href="#" class="flex flex-col mx-auto items-center bg-white rounded-lg border shadow-md 
-                        md:flex-row md:max-w-xl text-black hover:bg-white hover:text-green-500">
-            <img class="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" 
+                        sm:flex-row sm:max-w-xl">
+            <img class="object-cover w-full h-full rounded-t-lg sm:h-auto sm:w-48 sm:rounded-none sm:rounded-l-lg" 
                 src="Asset/Rimuru.jpg" alt="Rimuru">
-            <div class="flex flex-col justify-between p-5 leading-normal pr-[35px] pt-[35px]">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight ">RENFILL</h5>
+            <div class="flex flex-col justify-between p-5 leading-normal pr-[35px] pt-[35px] text-black hover:text-green-500">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight">RENFILL</h5>
                 <p class="font-bold">Download dan Pesan sekarang!</p>
                 <p class="font-normal text-justify">
                     Nikmati isi ulang produk keperluan sehari sehari faforitmu langsung dari rumah tanpa ribet. 
@@ -176,29 +205,8 @@
             </div>
         </a>
     </div>
-    
-    <!-- card_pesan -->
-    <div class="cardpes">
-      <div class="pesan">Cara Pemesanan</div>
-      <div class="tes" id="content1">
-          <img class="w-40 h-40 mx-auto mb-6" src="Asset/Slime1.jpg">
-          <h1 class="text-xl font-bold">Pesan</h1>
-          <p>Login ke aplikasi Renfill, Pilih Produk produk yang ingin dipesan dan diisi ulang beserta rincianya. Lalu lakukan pemesanan dengan menentukan hari dan alamat pengantara.</p>
-      </div>
-      <div class="tes" id="content2">
-          <img class="w-40 h-40 mx-auto mb-6" src="Asset/Slime2.jpg">
-          <h1 class="text-xl font-bold">Refill</h1>
-          <p>Driver kami akan datang ke rumah anda, Siapkan botol untuk isi ulang dan lakukan isi ulang, Lalu tuntaskan pembayaran dan Transaksi pun selesai.</p>
-      </div>
-      <div class="tes" id="content3">
-          <img class="w-40 h-40 mx-auto mb-6" src="Asset/Slime3.jpg">
-          <h1 class="text-xl font-bold">Ulangi</h1>
-          <p>Lakukan hal tersebut secara berulang ulang, pesan, lalu lakukan refill, sehingga penggunaan plastik sekali pakai dapat ditekan, dan mengurangi jumlah sampah plastik</p>
-  
-      </div>
-      </div>
 
-    <!-- FOORTER -->
+    <!-- FOOTER -->
     <footer class="text-center bg-green-600 text-white pt-3 p-">
         <div class="mt-3" style="font-family: 'Ubuntu', sans-serif;">Media Sosial Kami</div>  
         <div class="px-3 pt-3">
