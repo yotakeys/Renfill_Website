@@ -1,0 +1,52 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    height: 100vh;
+    padding: 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.2fr;
+    grid-template-areas:
+        "pesan pesan pesan"
+        "content1 content2 content3";
+    gap: 15px;
+    text-align: center;
+}
+
+.tes{
+    border-radius: 17px;
+    background-color: #fff;
+    padding : 10px;
+    box-shadow: 0 15px 20px 11px rgba(0, 0, 0, 0.1);
+}
+
+.pesan{
+    grid-area: pesan;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#content1{
+    grid-area: content1;
+}
+#content2{
+    grid-area: content2;
+}
+#content3{
+    grid-area: content3;
+}
+
+@media (max-width: 640px){
+    body{
+        height: 200vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:
+            0.2fr
+            1.2fr
+            1.2fr
+            1.2fr;
+        grid-template-areas:
+            "pesan"
+            "content1"
+            "content2"
+            "content3";
+    }
+}
