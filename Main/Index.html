@@ -124,8 +124,7 @@
     </header>
 
     <!-- HOME -->
-    <div class="grid h-[200vh] grid-cols-1 grid-rows-2 sm:h-[100vh] sm:grid-cols-2 sm:grid-rows-1
-                rounded-[20px] m-[30px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]">
+    <div class="home m-4 shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)] rounded-xl grid h-[200vh] grid-cols-1 grid-rows-2 sm:h-[100vh] sm:grid-cols-2 sm:grid-rows-1">
         <!-- KOLOM GAMBAR -->
         <div class="bg-center bg-cover col-span-1 items-center overflow-hidden bg-[url('Asset/RimuruK.png')]"></div> 
         <!-- KOLOM KONTEN -->
@@ -137,7 +136,7 @@
                 Botol refill untuk keperluan sehari-hari, dibandingkan menggunakan plastik sekali pakai
             </div>
             <br>
-            <button class="group mb-8 w-44 h-16 bg-green-500 hover:bg-green-600 border-2 py-2 px-4 rounded-xl inline-flex items-center">
+            <button class="motion-safe:animate-bounce group mb-8 w-44 h-16 bg-green-500 hover:bg-green-600 border-2 py-2 px-4 rounded-xl inline-flex items-center">
                 <svg class="mx-auto fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
                 </svg>
@@ -148,79 +147,11 @@
         </div>
     </div>
 
-      <!--Blogs/News-->
-      <section class="py-6 sm:py-12 bg-green-500 text-black">
-        <div class="container p-6 mx-auto space-y-8">
-            <div class="space-y-2 text-center">
-                <h2 class="text-3xl font-bold text-white">Blog And News</h2>
-                <p class="text-sm text-black text-white">Pantau terus berita terbaru dari Renfill!</p>
-            </div>
-            <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-                <article class="flex flex-col bg-white rounded-xl shadow-xl">
-                    <a rel="noopener noreferrer" href="#" aria-label="Coming Soon...">
-                        <img alt="" class="object-cover w-full h-52 bg-white" src="Asset/RimuruH.jpg">
-                    </a>
-                    <div class="flex flex-col flex-1 p-6">
-                        <a rel="noopener noreferrer" href="#" aria-label="Coming Soon..."></a>
-                        <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-black">Blogs/News</a>
-                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Coming Soon...</h3>
-                        <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-black">
-                            <span>Coming....</span>
-                            <span>Soon</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="flex flex-col bg-white rounded-xl shadow-xl">
-                    <a rel="noopener noreferrer" href="#" aria-label="Coming Soon...">
-                        <img alt="" class="object-cover w-full h-52 bg-white" src="Asset/RimuruH.jpg">
-                    </a>
-                    <div class="flex flex-col flex-1 p-6">
-                        <a rel="noopener noreferrer" href="#" aria-label="Coming Soon..."></a>
-                        <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-black">Blogs/News</a>
-                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Coming Soon...</h3>
-                        <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-black">
-                            <span>Coming....</span>
-                            <span>Soon</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="flex flex-col bg-white rounded-xl shadow-xl">
-                    <a rel="noopener noreferrer" href="#" aria-label="Coming Soon...">
-                        <img alt="" class="object-cover w-full h-52 bg-white" src="Asset/RimuruH.jpg">
-                    </a>
-                    <div class="flex flex-col flex-1 p-6">
-                        <a rel="noopener noreferrer" href="#" aria-label="Coming Soon..."></a>
-                        <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-black">Blogs/News</a>
-                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Coming Soon...</h3>
-                        <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-black">
-                            <span>Coming....</span>
-                            <span>Soon</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="flex flex-col bg-white rounded-xl shadow-xl">
-                    <a rel="noopener noreferrer" href="#" aria-label="Coming Soon...">
-                        <img alt="" class="object-cover w-full h-52 bg-white" src="Asset/RimuruH.jpg">
-                    </a>
-                    <div class="flex flex-col flex-1 p-6">
-                        <a rel="noopener noreferrer" href="#" aria-label="Coming Soon..."></a>
-                        <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-black">Blogs/News</a>
-                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Coming Soon...</h3>
-                        <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-black">
-                            <span>Coming....</span>
-                            <span>Soon</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
     <!-- CARD_PESAN -->
-    <div class="cardpes grid h-[200vh] sm:h-[100vh] p-[8vh] rounded-[20px] m-[30px] gap-[15px] text-center
+    <div class="cardpes grid h-[200vh] sm:h-[100vh] p-[8vh] gap-[15px] text-center
             shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]">
         <div class="pesan">Cara Pemesanan</div>
-        <div class="card overflow-auto rounded-[17px] bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]"
+        <div class="hover:animate-pulse card overflow-auto rounded-[17px] bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]"
             id="content1">
             <img class="w-40 h-40 mx-auto mb-6" src="Asset/Slime1.jpg">
             <h1 class="text-xl font-bold">Pesan</h1>
@@ -229,7 +160,7 @@
                 pemesanan dengan menentukan hari dan alamat pengantara.
             </p>
         </div>
-        <div class="card overflow-auto rounded-[17px] bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]" 
+        <div class="hover:animate-pulse card overflow-auto rounded-[17px] bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]" 
             id="content2">
             <img class="w-40 h-40 mx-auto mb-6" src="Asset/Slime2.jpg">
             <h1 class="text-xl font-bold">Refill</h1>
@@ -238,7 +169,7 @@
                 Lalu tuntaskan pembayaran dan Transaksi pun selesai.
             </p>
         </div>
-        <div class="card overflow-auto rounded-[17px] bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]"
+        <div class="hover:animate-pulse card overflow-auto rounded-[17px] bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]"
             id="content3">
             <img class="w-40 h-40 mx-auto mb-6" src="Asset/Slime3.jpg">
             <h1 class="text-xl font-bold">Ulangi</h1>
@@ -249,14 +180,14 @@
         </div>
     </div>
 
-    
-    <!-- CARD_DOWNLOAD -->
-    <div class="p-10 bg-green-500">
-        <a href="#" class="flex flex-col mx-auto items-center bg-white rounded-lg border shadow-md 
+
+      <!-- CARD_DOWNLOAD -->
+      <div class="p-10 bg-green-500">
+        <a href="#" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col mx-auto items-center bg-white rounded-lg border shadow-md 
                         sm:flex-row sm:max-w-xl">
             <img class="object-cover w-full h-full rounded-t-lg sm:h-auto sm:w-48 sm:rounded-none sm:rounded-l-lg" 
-                src="Asset/Rimuru.jpg" alt="Rimuru">
-            <div class="flex flex-col justify-between p-5 leading-normal pr-[35px] pt-[35px] text-black hover:text-green-500">
+                src="Asset/RimuruB.png" alt="Rimuru">
+            <div class="flex flex-col justify-between p-5 leading-normal pr-[35px] pt-[35px] text-black">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight">RENFILL</h5>
                 <p class="font-bold">Download dan Pesan sekarang!</p>
                 <p class="font-normal text-justify">
@@ -274,6 +205,104 @@
             </div>
         </a>
     </div>
+
+    
+    
+    <!--Card Customer-->
+    <div class="cardpes grid h-[200vh] sm:h-[100vh] p-[8vh] gap-[30px] text-center
+    shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]">
+    <div class="pesan">Customer Kami</div>
+    <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 card overflow-auto border-2 rounded-2xl border-green-500 bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]"
+    id="content1">
+    <img class="w-full h-40 mx-auto mb-6" src="Asset/Leluoch.jpg">
+    <h1 class="text-xl font-bold">Leluoch</h1>
+    <p class="text-sm">Sometimes it's just better not to be seen. That's how Harry had always lived his life. He prided himself as being the fly on the wall and the fae that blended into the crowd. That's why he was so shocked that she noticed him.
+        </p>
+    </div>
+    <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 card overflow-auto border-2 rounded-2xl border-green-500 bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]" 
+        id="content2">
+        <img class="w-full h-40 mx-auto mb-6" src="Asset/Gojo.jpg">
+        <h1 class="text-xl font-bold">Gojo</h1>
+        <p class="text-sm">He heard the crack echo in the late afternoon about a mile away. His heart started racing and he bolted into a full sprint. "It wasn't a gunshot, it wasn't a gunshot," he repeated under his breathlessness as he continued to sprint.
+        </p>
+        </div>
+        <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 card overflow-auto border-2 rounded-2xl border-green-500 bg-[#fff] p-[3vh] sm:p-[10px] shadow-[0_15px_25px_11px_rgba(0,0,0,0.1)]"
+        id="content3">
+        <img class="w-full h-40 mx-auto mb-6" src="Asset/Dazai.png">
+        <h1 class="text-xl font-bold">Dazai</h1>
+        <p class="text-sm">Debbie knew she was being selfish and unreasonable. She understood why the others in the room were angry and frustrated with her and the way she was acting. In her eyes, it didn't really matter how they felt because she simply didn't care.
+        </p>
+    </div>
+</div>
+</div>
+
+<!--Blogs/News-->
+<section class="py-6 sm:py-12 bg-green-500 text-black">
+   <div class="container p-6 mx-auto space-y-8">
+       <div class="space-y-2 text-center">
+           <h2 class="text-3xl font-bold text-white">Blog And News</h2>
+           <p class="text-sm text-black text-white">Pantau terus berita terbaru dari Renfill!</p>
+       </div>
+       <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+           <article class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col bg-white rounded-xl shadow-xl">
+               <a rel="noopener noreferrer" href="#" aria-label="Coming Soon...">
+                   <img alt="" class="object-cover w-full h-52 bg-white" src="Asset/RimuruH.jpg">
+               </a>
+               <div class="flex flex-col flex-1 p-6">
+                   <a rel="noopener noreferrer" href="#" aria-label="Coming Soon..."></a>
+                   <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-black">Blogs/News</a>
+                   <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Coming Soon...</h3>
+                   <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-black">
+                       <span>Coming....</span>
+                       <span>Soon</span>
+                   </div>
+               </div>
+           </article>
+           <article class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col bg-white rounded-xl shadow-xl">
+               <a rel="noopener noreferrer" href="#" aria-label="Coming Soon...">
+                   <img alt="" class="object-cover w-full h-52 bg-white" src="Asset/Tanjiro Red.jpg">
+               </a>
+               <div class="flex flex-col flex-1 p-6">
+                   <a rel="noopener noreferrer" href="#" aria-label="Coming Soon..."></a>
+                   <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-black">Blogs/News</a>
+                   <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Coming Soon...</h3>
+                   <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-black">
+                       <span>Coming....</span>
+                       <span>Soon</span>
+                   </div>
+               </div>
+           </article>
+           <article class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col bg-white rounded-xl shadow-xl">
+               <a rel="noopener noreferrer" href="#" aria-label="Coming Soon...">
+                   <img alt="" class="object-cover w-full h-52 bg-white" src="Asset/ItachiUp.jpg">
+               </a>
+               <div class="flex flex-col flex-1 p-6">
+                   <a rel="noopener noreferrer" href="#" aria-label="Coming Soon..."></a>
+                   <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-black">Blogs/News</a>
+                   <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Coming Soon...</h3>
+                   <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-black">
+                       <span>Coming....</span>
+                       <span>Soon</span>
+                   </div>
+               </div>
+           </article>
+           <article class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col bg-white rounded-xl shadow-xl">
+               <a rel="noopener noreferrer" href="#" aria-label="Coming Soon...">
+                   <img alt="" class="object-cover w-full h-52 bg-white" src="Asset/Pillar.jpg">
+               </a>
+               <div class="flex flex-col flex-1 p-6">
+                   <a rel="noopener noreferrer" href="#" aria-label="Coming Soon..."></a>
+                   <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-black">Blogs/News</a>
+                   <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Coming Soon...</h3>
+                   <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-black">
+                       <span>Coming....</span>
+                       <span>Soon</span>
+                   </div>
+               </div>
+           </article>
+       </div>
+   </div>
+</section>
 
     <!-- FOOTER -->
     <footer class="text-center bg-green-600 text-white pt-3 p-">
